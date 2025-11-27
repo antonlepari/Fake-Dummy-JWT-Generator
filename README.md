@@ -21,3 +21,18 @@ Ini hanya untuk edukasi & pengujian.
 ### 1. Generate token default
 ```bash
 python3 fake_jwt.py
+
+---
+
+# 🧪 JWT Decoder (Opsional)
+
+Anda juga dapat mendecode header & payload JWT menggunakan script berikut:
+
+## 📄 File: `decode_jwt.py`
+
+Script ini hanya membaca dan mengdecode JWT tanpa memverifikasi signature.
+
+### 🔧 Cara Menggunakan
+
+```bash
+python3 decode_jwt.py <token_jwt>
