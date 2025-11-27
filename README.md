@@ -26,16 +26,6 @@
 
 ---
 
-# 📁 Struktur Repo
-Fake-Dummy-JWT-Generator/
-├── fake_jwt.py # Generator token JWT unsigned
-├── decode_jwt.py # Decoder JWT (header & payload)
-├── screenshot.png
-└── README.md
-
-
----
-
 # 🧰 Instalasi
 
 Pastikan Python 3.8+ terinstall.
