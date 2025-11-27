@@ -1,38 +1,48 @@
-# 🟧 Fake / Dummy JWT Generator (Unsigned, "alg": "none")
+# 🔐 Fake JWT Tools  
+###### _Unsigned JWT Generator & Decoder for Debugging_  
 
-Script Python sederhana untuk membuat **JWT unsigned** dengan algoritma `"none"`.  
-Cocok untuk kebutuhan debugging, testing sistem autentikasi, eksplorasi struktur JWT, atau demonstrasi keamanan.
+![GitHub stars](https://img.shields.io/github/stars/<username>/<repo>?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/<username>/<repo>?style=for-the-badge)
+![GitHub license](https://img.shields.io/github/license/<username>/<repo>?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge)
 
-⚠️ **PERINGATAN: Token ini TIDAK aman. Jangan digunakan untuk produksi.**  
-Ini hanya untuk edukasi & pengujian.
+> Tools ringan untuk membuat **JWT unsigned (alg:none)** dan mendecode header/payload tanpa verifikasi signature.  
+> Cocok untuk debugging, testing, dan edukasi keamanan JWT.
 
 ---
 
-## 🚀 Fitur
-- Membuat JWT dummy tanpa signature (`alg: none`)
-- Payload bisa dikustomisasi dari CLI
+# 🚀 Fitur
+
+### 🔧 Generator (fake_jwt.py)
+- Membuat JWT **unsigned**
+- Mendukung payload custom
 - Base64URL encoding tanpa padding
-- Sangat ringan & tanpa dependency eksternal
+- Tidak membutuhkan dependensi eksternal
+
+### 🧩 Decoder (decode_jwt.py)
+- Mendecode header & payload JWT
+- Tanpa memverifikasi signature
+- Output rapi dan mudah dibaca
 
 ---
 
-## 📌 Contoh Penggunaan
+# 📁 Struktur Repo
+Fake-Dummy-JWT-Generator/
+├── fake_jwt.py # Generator token JWT unsigned
+├── decode_jwt.py # Decoder JWT (header & payload)
+├── screenshot.png
+└── README.md
 
-### 1. Generate token default
-```bash
-python3 fake_jwt.py
 
 ---
 
-# 🧪 JWT Decoder (Opsional)
+# 🧰 Instalasi
 
-Anda juga dapat mendecode header & payload JWT menggunakan script berikut:
+Pastikan Python 3.8+ terinstall.
 
-## 📄 File: `decode_jwt.py`
-
-Script ini hanya membaca dan mengdecode JWT tanpa memverifikasi signature.
-
-### 🔧 Cara Menggunakan
-
+### Clone repo
 ```bash
-python3 decode_jwt.py <token_jwt>
+git clone https://github.com/<username>/<repo>.git
+cd <repo>
+
+
